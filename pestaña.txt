@@ -1,0 +1,41 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+ <commands>
+	<command idMso="Collaborate" enabled="false" />
+ </commands>
+	<ribbon startFromScratch="true">
+		<contextualTabs>
+	        <tabSet idMso="TabSetSmartArtTools" visible="false" />
+              <tabSet idMso="TabSetChartTools" visible="false" />
+		  <tabSet idMso="TabSetDrawingTools" visible="false" />
+		  <tabSet idMso="TabSetPictureTools" visible="false" />
+		  <tabSet idMso="TabSetPivotTableTools" visible="false" />
+		  <tabSet idMso="TabSetHeaderAndFooterTools" visible="false" />
+		  <tabSet idMso="TabSetTableToolsExcel" visible="false" />
+		  <tabSet idMso="TabSetPivotChartTools" visible="false" />
+		  <tabSet idMso="TabSetInkTools" visible="false" />
+		  <tabSet idMso="TabSetSparkline" visible="false" />
+		  <tabSet idMso="TabSetTimeSlicerTools" visible="false" />
+		  <tabSet idMso="TabSetSlicerTools" visible="false" />
+		  <tabSet idMso="TabSetEquationTools" visible="false" />
+
+		</contextualTabs>
+		<tabs>
+			<tab id="customTab" label="Sistema Contable" insertAfterMso="TabHome">
+				<group id="conta" label="Contabilidad">
+					<button id="asientos" label="Asientos" onAction="form_asientos" size="large" imageMso="MasterPageAddNew" />
+					<button id="cuentas" label="Catalogo de Cuentas" size="large" onAction="form_CatCuentas" imageMso="BuildingBlocksOrganizer" />
+					<button id="balComprobacion" label="Balance de Comprobación" size="large" imageMso="ConflictsAcceptMenu"  />
+				</group >
+				<group id="empleados" label="Empleados">
+					<button id="costoEmpleado" label="Costeo" size="large" onAction="form_asientos" imageMso="AccessTableContacts" />
+					<button id="nomina" label="Nómina" size="large" imageMso="AuthorHighlightingHide" />
+				</group >
+				<group id="estados" label="Estados Financieros">
+					<button id="resultados" label="Estado de Resultados" size="large" imageMso="AccessReportMore" />
+					<button id="capital" label="Estado de Capital" size="large" imageMso="ReportsProject" />
+					<button id="balance" label="Balance General" size="large" imageMso="MasterDocumentShow"  />
+				</group >
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
